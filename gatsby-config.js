@@ -5,20 +5,18 @@ const { theme } = resolveConfig(tailwindConfig)
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter Tailwind CSS",
-    author: "Melanie Nolan",
-    description: "A Gatsby starter to set you up with Tailwind CSS",
+    title: "Mina Thompson Portfolio",
+    author: "Mina Thompson",
+    description: "The artistic portfolio of me, Mina Thompson - bullet journalist, watercolor artist and photographer",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Gatsby Starter Tailwind CSS",
-        short_name: "Gatsby Starter Tailwind CSS",
+        name: "Mina Thompson",
+        short_name: "Mina Thompson Portfolio",
         start_url: "/",
-        background_color: theme.colors.white,
-        theme_color: theme.colors.teal[500],
         icon: "static/icon.svg",
       },
     },
@@ -28,5 +26,13 @@ module.exports = {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/posts`,
+        name: `posts`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }
