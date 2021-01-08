@@ -1,6 +1,6 @@
 import React from "react"
 
-const Gallery = () => {
+const GalleryDisp = () => {
   return (
 
     <section className="text-gray-700 body-font">
@@ -15,24 +15,28 @@ const Gallery = () => {
         <div className="flex flex-wrap md:-m-2 -m-1">
         <div className="flex flex-wrap sm:w-full md:w-1/2">
             <div className="md:p-2 p-1 w-full">
-              <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://dummyimage.com/601x361" />
+              <a href="/galleries/1">
+                <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://c6.staticflickr.com/9/8890/28897154101_a8f55be225_b.jpg" /> 
+              </a>
             </div>
             <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/502x302" />
+              <a href="/galleries/2">
+                <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg" />
+              </a>
             </div>
             <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/503x303"/ >
+              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg" />
             </div>
           </div>
           <div className="flex flex-wrap sm:w-full md:w-1/2">
             <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/500x300" />
+              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://c4.staticflickr.com/9/8578/28357117603_97a8233cf5_b.jpg" />
             </div>
             <div className="md:p-2 p-1 w-1/2">
-              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://dummyimage.com/501x301" />
+              <img alt="gallery" className="w-full object-cover h-full object-center block" src="https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg" />
             </div>
             <div className="md:p-2 p-1 w-full">
-              <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://dummyimage.com/600x360" />
+              <img alt="gallery" className="w-full h-full object-cover object-center block" src="https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg" />
             </div>
           </div>
 
@@ -42,4 +46,4 @@ const Gallery = () => {
   )
 }
 
-export default Gallery
+export default GalleryDisp

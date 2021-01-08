@@ -14,6 +14,7 @@ const SEO = () => {
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <title>{title}</title>
+      <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     </Helmet>
   )
 }
